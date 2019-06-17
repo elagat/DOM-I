@@ -63,8 +63,14 @@ navBar[5].textContent = siteContent['nav']['nav-item-6'];
 
 let title = document.querySelector('h1');
 title.textContent = siteContent['cta']['h1'];
-title.style.width = '150px';
+title.style.width = '230px';
 title.style.textAlign = 'center';
+title.innerHTML = siteContent['cta']['h1'].split('DOM').join('DOM<br>');
+
+// Update the button
+
+let button = document.querySelector('button');
+button.textContent = siteContent['cta']['button'];
 
 
 // Update the middle content paragraphs
@@ -78,6 +84,11 @@ paragraph[4].textContent = siteContent['main-content']['vision-content'];
 paragraph[5].textContent = siteContent['contact']['address'];
 paragraph[6].textContent = siteContent['contact']['phone'];
 paragraph[7].textContent = siteContent['contact']['email'];
+paragraph[8].textContent = siteContent['footer']['copyright']
+
+// Address line break
+
+paragraph[5].innerHTML = siteContent['contact']['address'].split('Street').join('Street<br>');
 
 // Update the h4
 
