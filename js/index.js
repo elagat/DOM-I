@@ -67,7 +67,7 @@ title.style.width = '150px';
 title.style.textAlign = 'center';
 
 
-// Update the paragraphs
+// Update the middle content paragraphs
 
 let paragraph = document.querySelectorAll('p');
 paragraph[0].textContent = siteContent['main-content']['features-content'];
@@ -75,3 +75,12 @@ paragraph[1].textContent = siteContent['main-content']['about-content'];
 paragraph[2].textContent = siteContent['main-content']['services-content'];
 paragraph[3].textContent = siteContent['main-content']['product-content'];
 paragraph[4].textContent = siteContent['main-content']['vision-content'];
+
+// Update the h4 titles above the middle content paragraphs
+
+let h4Title = document.querySelectorAll('h4');
+h4Title[0].textContent = siteContent['main-content']['features-h4'];
+h4Title[1].textContent = siteContent['main-content']['about-h4'];
+h4Title[2].textContent = siteContent['main-content']['services-h4'];
+h4Title[3].textContent = siteContent['main-content']['product-h4'];
+h4Title[4].textContent = siteContent['main-content']['vision-h4'];
