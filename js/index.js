@@ -75,8 +75,11 @@ paragraph[1].textContent = siteContent['main-content']['about-content'];
 paragraph[2].textContent = siteContent['main-content']['services-content'];
 paragraph[3].textContent = siteContent['main-content']['product-content'];
 paragraph[4].textContent = siteContent['main-content']['vision-content'];
+paragraph[5].textContent = siteContent['contact']['address'];
+paragraph[6].textContent = siteContent['contact']['phone'];
+paragraph[7].textContent = siteContent['contact']['email'];
 
-// Update the h4 titles above the middle content paragraphs
+// Update the h4
 
 let h4Title = document.querySelectorAll('h4');
 h4Title[0].textContent = siteContent['main-content']['features-h4'];
@@ -84,3 +87,4 @@ h4Title[1].textContent = siteContent['main-content']['about-h4'];
 h4Title[2].textContent = siteContent['main-content']['services-h4'];
 h4Title[3].textContent = siteContent['main-content']['product-h4'];
 h4Title[4].textContent = siteContent['main-content']['vision-h4'];
+h4Title[5].textContent = siteContent['contact']['contact-h4'];
