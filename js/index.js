@@ -59,6 +59,21 @@ navBar[3].textContent = siteContent['nav']['nav-item-4'];
 navBar[4].textContent = siteContent['nav']['nav-item-5'];
 navBar[5].textContent = siteContent['nav']['nav-item-6'];
 
+for (let i = 0; i < 6; i++) {
+  navBar[i].style.color = 'green';
+}
+
+let nav = document.querySelector('nav');
+let newAnchor1 = document.createElement('a');
+let newAnchor2 = document.createElement('a');
+newAnchor1.textContent = 'Blog'
+newAnchor2.textContent = 'Story'
+nav.appendChild(newAnchor1);
+nav.prepend(newAnchor2);
+
+newAnchor1.style.color = 'green';
+newAnchor2.style.color = 'green';
+
 // Update the h1
 
 let title = document.querySelector('h1');
