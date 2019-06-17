@@ -65,3 +65,13 @@ let title = document.querySelector('h1');
 title.textContent = siteContent['cta']['h1'];
 title.style.width = '150px';
 title.style.textAlign = 'center';
+
+
+// Update the paragraphs
+
+let paragraph = document.querySelectorAll('p');
+paragraph[0].textContent = siteContent['main-content']['features-content'];
+paragraph[1].textContent = siteContent['main-content']['about-content'];
+paragraph[2].textContent = siteContent['main-content']['services-content'];
+paragraph[3].textContent = siteContent['main-content']['product-content'];
+paragraph[4].textContent = siteContent['main-content']['vision-content'];
