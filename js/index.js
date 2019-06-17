@@ -43,8 +43,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // Update the img src for the code snippets
 
-let ctaImage = document.getElementById('cta-img');
-ctaImage.setAttribute('src', siteContent['cta']['img-src']);
+let ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let middleImage = document.getElementById('middle-img');
-middleImage.setAttribute('src', siteContent['main-content']['img']);
+let middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', 'img/mid-page-accent.jpg');
